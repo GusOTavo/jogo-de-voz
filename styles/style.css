@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root {
+    --fonte-principal: 'Varela Round', sans-serif;
+
+    --cor-de-fundo:#609EA2;
+    --cor-principal:#F0EEED;
+    --cor-botao: #332C39;
+    --cor-botao-clicado: #BAD7E9;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 5em;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+.acertou-texto {
+    margin-top: 0;
+    margin: 0.5em;
+}
+
+.mensagem {
+    font-size: 1.5em;
+    margin-top: 35px;
+}
+
+.box {
+    border: 2px solid var(--cor-principal);
+    display: inline-block;
+    font-size: 4em;
+    padding: 10px;
+    margin: 20px;
+}
+
+.botao-jogar {
+    margin: 2em;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 2px solid var(--cor-botao);
+    font-size: 15px;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-principal);
+    transition: 0.2s;
+}
+
+.botao-jogar:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: var(--cor-principal);
+    background: var(--cor-botao);
+    border: 2px solid var(--cor-principal);
+}
+
+.botao-jogar:active {
+    color: var(--cor-botao);
+    background: var(--cor-botao-clicado);
+    border: 2px solid var(--cor-botao);
+}
+
